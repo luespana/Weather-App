@@ -5,7 +5,7 @@ const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: ["@babel/polyfill","./src/app/index.js"],
-  output: { path: __dirname + "/build", filename: "bundle.js" },
+  output: { path: __dirname + "/public/build", filename: "bundle.js" },
   mode: "development",
   module: {
     rules: [
